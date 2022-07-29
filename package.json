@@ -2,7 +2,7 @@
   "name": "slon-um-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shonenenenene.github.io/slon-um-custom-style-app/",
+  "homepage": "https://shonenenenene.github.io/slon-um-custom-style-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
