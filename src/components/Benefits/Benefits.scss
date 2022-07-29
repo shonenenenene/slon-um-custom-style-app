@@ -1,0 +1,37 @@
+@import "../App/App.scss";
+
+.benefits {
+    padding-bottom: 170px;
+    background-image: url("../../../public/img/waves.svg");
+    background-repeat: no-repeat;
+    .benefits-container {
+        h2 {
+            margin-bottom: 58px;
+            span {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url("../../../public/img/underline.svg");
+                    width: 105px;
+                    height: 10px;
+                    bottom: -7px;
+                    left: -2px;
+                }
+            }
+
+        }
+        .benefits-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .benefits-cards {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+}

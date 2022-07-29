@@ -1,0 +1,70 @@
+@import "../../App/App.scss";
+
+.top {
+    @include flex(space-between, center);
+    min-height: 110px;
+    .top-logo {
+        @include flex(flex-start, center);
+        .top-logo-img {
+            path {
+                &:nth-child(1) {
+                    fill: $additional-accent-color;
+                }
+                &:nth-child(2) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(3) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(4) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(5) {
+                    fill: $main-accent-color;
+                }
+            }
+        }
+        .logo-title {
+            margin-left: 5px;
+            span {
+                &:first-child {
+                    font-weight: 500;
+                    font-size: 34px;
+                }
+                &:last-child {
+                    font-size: 34px;
+                    color: $additional-accent-color;
+                }
+            }
+        }
+    }
+    .top-btn {
+        border-radius: 15px;
+        padding: 10px 60px;
+        font-size: 20px;
+        background-color: $additional-accent-color;
+        color: white;
+        border: 1px solid $additional-accent-color;
+        animation: color-changer 1.5s forwards;
+        animation-delay: 0.5s;
+        &:hover {
+            box-shadow: 0px 15px 30px rgba($color: $additional-accent-color, $alpha: 0.3);
+            border: 1px solid rgba($color: $additional-accent-color, $alpha: 0.3) !important;
+            color: $additional-accent-color !important;
+        }
+    }
+
+}
+
+@keyframes color-changer {
+    0%{
+        background-color: $additional-accent-color;
+        color: white;
+    }
+
+    100%{
+        background-color: white;
+        color: $main-color;
+        border: 1px solid $main-color;
+    }
+}

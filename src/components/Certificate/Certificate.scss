@@ -1,0 +1,48 @@
+@import "../App/App.scss";
+.certificate {
+    padding-bottom: 200px;
+    background-image: url("../../../public/img/waves.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .certificate-container {
+        @include flex(space-between, center);
+        .certificate-description {
+            max-width: 500px;
+            h2 {
+                margin-bottom: 27px;
+                span {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background-image: url(../../../public/img/underline3.svg);
+                        width: 150px;
+                        height: 10px;
+                        bottom: -7px;
+                        left: -2px;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 27px;
+            }
+        }
+        .certificate-document {
+            max-width: 680px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .certificate-container {
+        justify-content: center !important;
+        flex-direction: column;
+        .certificate-description {
+            .p2 {
+                text-align: center !important;
+            }
+            margin-bottom: 50px !important;
+        }
+
+    }
+}
